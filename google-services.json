@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "569717239384",
+    "project_id": "butland-c33cf",
+    "storage_bucket": "butland-c33cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569717239384:android:7812d4c05b8d13fd6ca42d",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569717239384-ksadj9cpj21qkj1jfn8du5frvbaemd6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz7ejAe0VVlgIDhoy0Zc_KmTFw8yOUOSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569717239384-ksadj9cpj21qkj1jfn8du5frvbaemd6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
