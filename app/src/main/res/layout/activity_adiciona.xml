@@ -7,7 +7,7 @@
     tools:context=".AdicionaActivity">
 
     <EditText
-        android:id="@+id/etDate2"
+        android:id="@+id/etDataInicial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDate" />
+        app:layout_constraintTop_toBottomOf="@+id/etDataInicial"
+        tools:ignore="NotSibling" />
 
     <EditText
         android:id="@+id/etTitulo"
@@ -46,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etTitulo" />
 
     <EditText
-        android:id="@+id/etDate"
+        android:id="@+id/etDateFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"

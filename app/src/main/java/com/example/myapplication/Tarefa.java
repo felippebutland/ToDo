@@ -20,6 +20,9 @@ public class Tarefa {
     public Tarefa() {
     }
 
+    public Tarefa(String dataInicial, String dataFinal, String descricao, String titulo, String id) {
+    }
+
     public String getDataInicial() {
         return dataInicial;
     }

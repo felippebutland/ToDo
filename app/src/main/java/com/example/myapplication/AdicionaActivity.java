@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.example.myapplication.R;
@@ -38,10 +40,10 @@ public class AdicionaActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mDatabase = FirebaseDatabase.getInstance().getReference();
-                String dataInicial = ((EditText) findViewById(R.id.dataInicial)).getText().toString();
-                String dataFinal = ((EditText) findViewById(R.id.dataFinal)).getText().toString();
-                String descricao = ((EditText) findViewById(R.id.descrica)).getText().toString();
-                String titulo = ((EditText) findViewById(R.id.titulo)).getText().toString();
+                String dataInicial = ((EditText) findViewById(R.id.etDataInicial)).getText().toString();
+                String dataFinal = ((EditText) findViewById(R.id.etDateFinal)).getText().toString();
+                String descricao = ((EditText) findViewById(R.id.etDescricao)).getText().toString();
+                String titulo = ((EditText) findViewById(R.id.etTitulo)).getText().toString();
                 String id = mDatabase.push().getKey();
                 Tarefa tarefa = new Tarefa(dataInicial, dataFinal, descricao, titulo, id);
                 mDatabase.child("tarefas").child(id).setValue(tarefa);

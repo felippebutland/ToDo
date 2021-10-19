@@ -7,22 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.myapplication.R;
-
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnAdiciona;
+    private Button btnEntrar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btnAdiciona = (Button) findViewById(R.id.btnAdiciona);
-        btnAdiciona.setOnClickListener(new View.OnClickListener() {
+        btnEntrar = (Button) findViewById(R.id.btnEntrar);
+        btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Adiciona = new Intent(MainActivity.this, AdicionaActivity.class);
-                startActivity(Adiciona);
+                Intent Inicial = new Intent(MainActivity.this, BoasVindas.class);
+                startActivity(Inicial);
             }
         });
 

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Butland and Cia</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="entrar">Entrar</string>
+    <string name="vamos_come_ar">Vamos começar</string>
 </resources>
