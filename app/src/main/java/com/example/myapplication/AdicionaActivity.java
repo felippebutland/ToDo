@@ -33,20 +33,18 @@ public class AdicionaActivity extends AppCompatActivity {
             }
         });
 
-
-        btnSalva = (Button) findViewById(R.id.btnSalvaProd);
+        btnSalva = (Button) findViewById(R.id.btnSalvaTarefa);
         btnSalva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mDatabase = FirebaseDatabase.getInstance().getReference();
-                String nome = ((EditText) findViewById(R.id.nomeProd)).getText().toString();
-                String preco = ((EditText) findViewById(R.id.precoProd)).getText().toString();
-                String quantidade = ((EditText) findViewById(R.id.quantidadeProd)).getText().toString();
-                String descricao = ((EditText) findViewById(R.id.descricaoProd)).getText().toString();
-                String categoria = ((EditText) findViewById(R.id.categoriaProd)).getText().toString();
+                String dataInicial = ((EditText) findViewById(R.id.dataInicial)).getText().toString();
+                String dataFinal = ((EditText) findViewById(R.id.dataFinal)).getText().toString();
+                String descricao = ((EditText) findViewById(R.id.descrica)).getText().toString();
+                String titulo = ((EditText) findViewById(R.id.titulo)).getText().toString();
                 String id = mDatabase.push().getKey();
-                Produto produto = new Produto(nome, preco, quantidade, descricao, categoria);
-                mDatabase.child("produtos").child(id).setValue(produto);
+                Tarefa tarefa = new Tarefa(dataInicial, dataFinal, descricao, titulo, id);
+                mDatabase.child("tarefas").child(id).setValue(tarefa);
                 Intent Volta = new Intent(AdicionaActivity.this, MainActivity.class);
                 startActivity(Volta);
             }
